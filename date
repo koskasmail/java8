@@ -22,7 +22,8 @@ public ZoneList() {
 
 public ZoneIdDate() {
 		// other zones
-		ZoneId zoneId = ZoneId.of("US/Pacific");
+		String state = "Europe/London";
+		ZoneId zoneId = ZoneId.of(state);
 		LocalDate localDateZI = LocalDate.now(zoneId);
 		System.out.println("Current Date: " + zoneId + " Local Date: " + localDateZI);
 }
@@ -35,7 +36,11 @@ public EnterDiffrentDate() {
 		
 		System.out.println("\nlocal date parse");
 		LocalDate localDateParse = LocalDate.parse("2022-04-28");
-		System.out.print(localDateParse);	
+		System.out.print(localDateParse);
+		
+		System.out.println("");
+		LocalDate firstDay_1974 = LocalDate.of(1974, Month.APRIL, 28);
+		System.out.println("specific Date: " + firstDay_1974);
 }
 
 
