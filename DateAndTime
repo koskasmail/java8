@@ -1,0 +1,26 @@
+
+
+
+	public DateAndTime() {
+		
+		LocalDateTime today = LocalDateTime.now();
+		System.out.println("Current DateTime: " + today);
+
+		
+		today = LocalDateTime.of(LocalDate.now(), LocalTime.now());
+		System.out.println("Current DateTime: " + today);
+
+		
+		LocalDateTime specificDate = LocalDateTime.of(2014, Month.JANUARY, 1, 10, 10, 30);
+		System.out.println("Specific Date: " + specificDate);
+
+		
+		String state = "Europe/London";
+		LocalDateTime todayLosAngeles = LocalDateTime.now(ZoneId.of(state));
+		System.out.println("Current Date in IST: " + todayLosAngeles);
+
+		
+		LocalDateTime dateFromBase = LocalDateTime.ofEpochSecond(10000, 0, ZoneOffset.UTC);
+		System.out.println("10000th second time from 01/01/1970: " + dateFromBase);
+		
+	}
