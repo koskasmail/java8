@@ -1,0 +1,26 @@
+
+
+----[user story]------------
+
+
+String --> type to type
+
+type-list:
+lowercase
+UPPERCASE
+snake_case
+UPPER_SNAKE_CASE
+lower-kebab-case
+UPPER-KEBAB-CASE
+pascalCase
+camelCase
+CapitalCase
+
+
+#1 - use primitive variable (no array, no object)
+#2 - use primitive variable and array (no object)
+#3 - free to use all objects
+
+char number | char icon | char number | char icon | 
+102         | esc       | 220         | E         |
+
