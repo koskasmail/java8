@@ -1,0 +1,25 @@
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LambdaForEach {
+
+	
+	public LambdaForEach() {
+		
+		List <Product> productList = new ArrayList();
+	
+		// cooking 
+		productList.add(new Product("id-1001","microwave","hemilton",1122,"white","xl","b",100 ,500));
+		productList.add(new Product("id-1002","toaster-oven","hemilton",1500,"black","l","c",150 ,350));
+		
+		// baking a cake
+		productList.add(new Product("id-2001", "phone", "nokia", 5577, "black", "xs", "a", 200, 450));
+		
+		
+		productList.forEach(p -> {
+			System.out.println(p.toString());
+		});
+	}
+}
