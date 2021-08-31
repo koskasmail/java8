@@ -101,4 +101,10 @@ public class Product {
 		" quantity: " + this.quantity +  
 		" price: " + this.price ;
 	}
+	
+	
+	public void toStringFormated() {
+		System.out.printf("\r\nid: %-5s , name: %-15s , manufacturer: %-15S , model: %-5d , color: %-10s ,  size: %-5s , quality: %-5s ,  quantity: : %-5d , price: %-5d "  
+				, this.id, this.name, this.manufacturer, this.model, this.color, this.size, this.quality, this.quantity, this.price );
+	}
 }
