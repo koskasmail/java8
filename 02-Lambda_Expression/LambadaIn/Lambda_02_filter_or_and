@@ -3,10 +3,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lambda_02_filter_or_and {
-
-	public Lambda_02_filter_or_and() {
-
+public class Lambda_02_filter_or_and 
+{
+	public Lambda_02_filter_or_and() 
+	{
 		ProductsInventory p2 = new ProductsInventory();
 
 		System.out.println("Or Condition");
