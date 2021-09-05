@@ -22,7 +22,6 @@ public class ReadLineByLine
 		} 
 		catch (IOException e) 
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
