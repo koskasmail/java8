@@ -1,24 +1,19 @@
 
 
-	public TimeLocalTime() {
-		
+	public TimeLocalTime() 
+	{	
 		LocalTime localTime = LocalTime.now();
 		System.out.println("Current Time: " + localTime);
-		
-		
+			
 		LocalTime specificTime = LocalTime.of(12, 10, 11, 13);
 		System.out.println("Specific Time of Day: " + specificTime);
-		
 		
 		String state = "Europe/London";
 		ZoneId zoneId = ZoneId.of(state);
 		LocalTime LondonTime = localTime.now(zoneId);
 		System.out.println("Current Date: " + zoneId + " is "+ LondonTime );
 		
-		
 		int totalSecond = 66;
 		LocalTime TimeInSeconds = localTime.ofSecondOfDay(totalSecond);
 		System.out.println("total minutes from " + totalSecond + " second is: " + TimeInSeconds);
 	}
-  
-  

@@ -1,10 +1,8 @@
 
 
-
-	public ZoneTime() {
+	public ZoneTime() 
+	{
 		ZoneId zoneId = ZoneId.of("US/Pacific");
 		LocalTime localTime = LocalTime.now(zoneId);
-		System.out.println("Zone Time Us pacific is : " + localTime);
-		
+		System.out.println("Zone Time Us pacific is : " + localTime);		
 	}
-

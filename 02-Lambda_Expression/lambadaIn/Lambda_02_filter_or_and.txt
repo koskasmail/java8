@@ -12,13 +12,15 @@ public class Lambda_02_filter_or_and
 		System.out.println("Or Condition");
 		p2.getStatMainList().stream()
 				.filter(p -> p.getId().equalsIgnoreCase("id-1001") || p.getId().equalsIgnoreCase("id-1002"))
-				.forEach(p -> {
+				.forEach(p -> 
+				{
 					System.out.println(p.toString());
 				});
 		System.out.println("======================");
 
 		System.out.println("And Condition");
-		p2.getStatMainList().stream().filter(p -> p.getPrice() > 100 && p.getPrice() < 460).forEach(p -> {
+		p2.getStatMainList().stream().filter(p -> p.getPrice() > 100 && p.getPrice() < 460).forEach(p -> 
+		{
 			System.out.println(p.toString());
 		});
 	}

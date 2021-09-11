@@ -1,6 +1,7 @@
 
 
-	public DateAPI() {
+	public DateAPI() 
+	{
 		Instant timestamp = new Date().toInstant();
 
 		LocalDateTime date = LocalDateTime.ofInstant(timestamp, ZoneId.of(ZoneId.SHORT_IDS.get("PST")));
@@ -21,6 +22,3 @@
 		GregorianCalendar gc = GregorianCalendar.from(gregorianCalendarDateTime);
 		System.out.println(gc);
 	}
-
-
-

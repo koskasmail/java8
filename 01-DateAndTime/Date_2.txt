@@ -1,25 +1,21 @@
 
 
-	public DateLocalDate() {
-		
+	public DateLocalDate() 
+	{		
 		LocalDate today = LocalDate.now();
 		System.out.println("Current Date: " + today);
 		
-		
 		LocalDate firstDay_1974 = LocalDate.of(1974, Month.APRIL, 28);
 		System.out.println("specific Date:" + firstDay_1974);
-		
 		
 		String state = "Europe/London";
 		ZoneId zoneId = ZoneId.of(state);
 		LocalDate todayLondon = LocalDate.now(zoneId);
 		System.out.println("Current Date: " + zoneId + " is "+ todayLondon );
 		
-		
 		int days = 365;
 		LocalDate dateFromBase = LocalDate.ofEpochDay(days);
 		System.out.println("365 the day from base date: " + dateFromBase);
-		
 		
 		int year = 2023;
 		int daysInYear = 119; 

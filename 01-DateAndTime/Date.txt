@@ -1,12 +1,15 @@
 
-public CurrentLocalDate() {
+
+public CurrentLocalDate() 
+{
 		// local date
 		LocalDate localDate = LocalDate.now();
 		System.out.println("Local Date: " + localDate ); 	
 }
 
 
-public ZoneList() {	
+public ZoneList() 
+{	
 		TreeSet<String> sortedZones = new TreeSet<>(ZoneId.getAvailableZoneIds());
 
 		System.out.println("Number of zones: " + sortedZones.size());
@@ -20,7 +23,8 @@ public ZoneList() {
 }
 
 
-public ZoneIdDate() {
+public ZoneIdDate() 
+{
 		// other zones
 		String state = "Europe/London";
 		ZoneId zoneId = ZoneId.of(state);
@@ -29,7 +33,8 @@ public ZoneIdDate() {
 }
 
 
-public EnterDiffrentDate() {
+public EnterDiffrentDate() 
+{
 		System.out.println("\nlocal date of");
 		LocalDate localDate = LocalDate.of(2022, 04, 28);
 		System.out.print(localDate);
@@ -44,12 +49,12 @@ public EnterDiffrentDate() {
 }
 
 
-public DefaultZoneDate() {
+public DefaultZoneDate() 
+{
 		// default zone
 		Clock clock = Clock.systemDefaultZone();
 		LocalDate localDateDz = LocalDate.now(clock);
 		System.out.println("systemDefaultZone: " + localDateDz);
 }
-  
   
   

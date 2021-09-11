@@ -1,7 +1,5 @@
 
 
-package test.test002;
-
 public class Product {
 
 	/// /// /// product_id, product_name..... 
