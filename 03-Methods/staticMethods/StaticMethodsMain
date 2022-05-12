@@ -1,0 +1,22 @@
+
+public class StaticMethodsMain 
+{
+	public StaticMethodsMain() 
+	{
+		MyData myData = new MyData();
+		myData.print("test");
+		
+		System.out.println("...");
+		if (myData.isNull(null)) 
+			System.out.println("StaticMethodsMain.isNull = true");
+		else 
+			System.out.println("StaticMethodsMain.isNull = false");
+
+		System.out.println("...");
+		if (!(myData.isNull("test"))) 
+			System.out.println("StaticMethodsMain.isNull = true");
+		else 
+			System.out.println("StaticMethodsMain.isNull = false");
+
+	}
+}
