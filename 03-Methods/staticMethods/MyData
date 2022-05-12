@@ -1,0 +1,9 @@
+
+public class MyData implements MyDataInterface
+{
+	public boolean isNull(String str) 
+	{
+		System.out.println("MyData.isNull == " + (str == null ? true : false) );
+		return str == null ? true : false;
+	}
+}
