@@ -1,0 +1,13 @@
+public interface Interface_2 {
+
+	void method_2();
+	
+	default void log(String str) {
+		System.out.println("interface_2.log ::: 1arg :::" + str);
+	}
+	
+	default void log(String title, String message) {
+		System.out.println("interface_2().log ::: 2arg :::" + title + " --- " + message + " programmer ");
+	}
+
+}
