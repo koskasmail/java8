@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
+public class StreamTextFile 
+{
+	public StreamTextFile() 
+	{	
+		try 
+		{
+			System.out.println("\n----[StreamTextFile]------------");
+			String stFileName = "src/nio/txtFile.txt";
+			Stream stream = Files.lines(Paths.get(stFileName));
+			stream.forEach(line -> {
+				System.out.println(line);
+			});		
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}	
+	}
+}
