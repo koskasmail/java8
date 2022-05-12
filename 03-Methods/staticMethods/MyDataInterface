@@ -1,0 +1,16 @@
+public interface MyDataInterface 
+{
+	default void print(String str) 
+	{
+		if (!isNull(str)) 
+		{
+			System.out.println("MyDataInterface.print.!isNull == " + str);
+		}
+	}
+
+	static boolean isNull(String str) 
+	{
+		System.out.println("MyDataInterface.isNull " );
+		return str == null ? true : "".equals(str) ? true : false;
+	}
+}
