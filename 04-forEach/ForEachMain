@@ -1,0 +1,15 @@
+public class ForEachMain {
+
+	public void WelcomeMesg() {
+		System.out.println("");
+		System.out.println("Java 8, we can use the java 8 ''forEach'' to loop or iterate a Map, List, Set, or Stream.");
+		System.out.println("");
+	}
+
+	public ForEachMain() {
+		WelcomeMesg();
+//		new LoopMapClassic();
+//		new LoopMapJava8();
+//		new LoopMapJava8WithNull();
+//		new LoopMapJava8WithoutNull();
+	}
