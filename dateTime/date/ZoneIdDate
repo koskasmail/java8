@@ -1,0 +1,15 @@
+
+import java.time.LocalDate;
+import java.time.ZoneId;
+
+public class ZoneIdDate {
+
+	public ZoneIdDate() {
+		// other zones
+		String state = "Europe/London";
+		ZoneId zoneId = ZoneId.of(state);
+		LocalDate localDateZI = LocalDate.now(zoneId);
+		System.out.println("Current Date: " + zoneId + " Local Date: " + localDateZI);
+	}
+
+}
