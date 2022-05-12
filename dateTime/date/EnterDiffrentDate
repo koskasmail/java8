@@ -1,0 +1,22 @@
+
+import java.time.LocalDate;
+import java.time.Month;
+
+public class EnterDiffrentDate {
+
+	public EnterDiffrentDate() {
+		System.out.println("\nlocal date of");
+		LocalDate localDate = LocalDate.of(2022, 04, 28);
+		System.out.print(localDate);
+		System.out.println("");	
+		
+		System.out.println("\nlocal date parse");
+		LocalDate localDateParse = LocalDate.parse("2022-04-28");
+		System.out.println(localDateParse);
+		
+		System.out.println("");
+		LocalDate firstDay_1974 = LocalDate.of(1974, Month.APRIL, 28);
+		System.out.println("specific Date: " + firstDay_1974);
+	}
+
+}
