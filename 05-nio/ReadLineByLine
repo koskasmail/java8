@@ -1,0 +1,28 @@
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReadLineByLine 
+{
+	public ReadLineByLine() 
+	{
+		try 
+		{
+			System.out.println("\n----[ReadLineByLine]------------");
+			String stFileName = "src/nio/txtFile.txt";
+			List lines = Files.readAllLines(Paths.get(stFileName));
+			
+			for (int index=0; index < lines.size() ; index++) 
+			{
+				System.out.println(lines.get(index));
+			}		
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+}
