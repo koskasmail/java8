@@ -13,3 +13,4 @@ public class ForEachMain {
 //		new LoopMapJava8WithNull();
 //		new LoopMapJava8WithoutNull();
 	}
+}
