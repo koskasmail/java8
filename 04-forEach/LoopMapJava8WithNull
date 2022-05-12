@@ -1,0 +1,31 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+/*
+ * 1.3 Java 8 forEach (key:value with null) to loop a Map and print out its entries.
+ */
+public class LoopMapJava8WithNull 
+{
+	public LoopMapJava8WithNull() 
+	{
+	      Map<String, Integer> map = new HashMap<>();
+	      map.put("A", 10);
+	      map.put("B", 20);
+	      map.put("C", 30);
+	      map.put(null, 40);
+	      map.put("E", null);
+	      map.put("F", 60);
+	      
+	      System.out.println("\n----[with null]------------");
+
+	      if (map != null) 
+	      {
+	          map.forEach((k, v) -> System.out.println("Key : " + k + ", Value : " + v));
+	      }
+	      
+	      System.out.println("");
+	      
+	}
+}
