@@ -1,0 +1,30 @@
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Delayed;
+
+public class ParallelStreamsEx01 
+{
+	public ParallelStreamsEx01() 
+	{	
+		List employeeList = new ArrayList();
+		
+		employeeList.add(new Employee("Yifat","goldfarb",25700));
+		employeeList.add(new Employee("Shalom","lizrovitch",5700));
+		employeeList.add(new Employee("Uri","goldfarb",25700));
+		employeeList.add(new Employee("iris","goldfarb",15700));
+
+		
+		long t1 = System.currentTimeMillis();
+		System.out.println("Sequential Stream count (bigger than > 3000): " + employeeList.stream().filter(e -> ((Employee) e).getSalary() > 3000).count());
+		
+		long t2 = System.currentTimeMillis();
+		System.out.println("Sequential Stream Time taken: " + (t2 - t1));
+
+		t1 = System.currentTimeMillis();
+		System.out.println("Parallel Stream count (bigger than > 10000): " + employeeList.parallelStream().filter(e -> ((Employee) e).getSalary() > 10000).count());
+
+		t2 = System.currentTimeMillis();
+		System.out.println("Parallel Stream Time taken: " + (t2 - t1));
+	}
+}
