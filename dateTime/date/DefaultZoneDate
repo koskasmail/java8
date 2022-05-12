@@ -1,0 +1,14 @@
+
+import java.time.Clock;
+import java.time.LocalDate;
+
+public class DefaultZoneDate {
+
+	public DefaultZoneDate() {
+		// default zone
+		Clock clock = Clock.systemDefaultZone();
+		LocalDate localDateDz = LocalDate.now(clock);
+		System.out.println("systemDefaultZone: " + localDateDz);
+	}
+
+}
