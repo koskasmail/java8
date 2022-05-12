@@ -1,0 +1,10 @@
+
+public class DateAndTimeMain {
+
+	public DateAndTimeMain() {
+		System.out.println("---[DateAndTimeMain main]------------");
+		new DateAPI();
+		System.out.println("---[DateAndTimeMain end ]------------");			
+	}
+
+}
