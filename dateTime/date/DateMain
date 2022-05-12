@@ -1,0 +1,11 @@
+import java.time.LocalDate;
+
+public class DateMain{
+
+	public DateMain()  {
+		System.out.println("---[date main]------------");
+		new EnterDiffrentDate();
+		System.out.println("---[date end ]------------");
+	}
+
+}
