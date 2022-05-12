@@ -1,0 +1,32 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
+/*
+ * 1.2 Java 8 can use forEach to loop a Map and print out its entries.
+ */
+public class LoopMapJava8 {
+	public LoopMapJava8() {
+		Map<String, Integer> map = new HashMap<>();
+		map.put("A", 10);
+		map.put("B", 20);
+		map.put("C", 30);
+		map.put("D", 40);
+		map.put("E", 50);
+		map.put("F", 60);
+
+		System.out.println("----[output]------------");
+
+		// lambda
+		System.out.println("\n----[key]------------");
+		map.forEach((k, v) -> System.out.print(k + " , "));
+		
+		System.out.println("\n\n----[value]------------");
+		map.forEach((k, v) -> System.out.print(v + " , "));
+		
+		System.out.println("\n\n----[key : value]------------");
+		map.forEach((k, v) -> System.out.println("Key : " + k + ", Value : " + v));
+
+		System.out.println("");
+	}
+}
