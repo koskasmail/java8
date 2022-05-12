@@ -1,0 +1,16 @@
+public class MethodMain {
+
+	public MethodMain() {
+		System.out.print("\n----[Interface_1]----\n");
+		Interface_1 interface_1 = new OneClass();
+		interface_1.method_1("jron");
+		interface_1.log("This is interface_1 log");
+		interface_1.log("file saved", "file saved successfully");
+		
+		System.out.print("\n----[Interface_2]----\n");
+		Interface_2 interface_2 = new OneClass();
+		interface_2.method_2();
+		interface_2.log("This is interface_2 log");
+		interface_2.log("hi","there");
+	}
+}
