@@ -1,0 +1,10 @@
+
+public class TimeMain {
+
+	public TimeMain() {
+		System.out.println("---[TimeMain main]------------");
+		new ZoneTime();		
+		System.out.println("---[TimeMain end ]------------");
+	}
+
+}
