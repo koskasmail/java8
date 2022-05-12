@@ -1,0 +1,7 @@
+public class NioMain {
+
+	public NioMain() {
+		new ReadLineByLine();
+		new StreamTextFile();
+	}
+}
