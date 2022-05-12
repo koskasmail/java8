@@ -1,0 +1,26 @@
+public class OneClass implements Interface_1, Interface_2 {
+
+	@Override
+	public void method_1(String str) {
+		System.out.println("OneClass.Interface_1().method_1 ::: " + str);
+	}
+	
+	@Override
+	public void method_2() {
+		System.out.println("OneClass.Interface_2().method_2() ");
+	}
+	
+
+	
+	public void log(String str ) {
+		System.out.println("xxxxxxxxxxxOneClass.log............ " + str);
+		Interface_1.super.log("jaron");
+	}
+
+	@Override
+	public void log(String title, String message) {
+		// TODO Auto-generated method stub
+		Interface_1.super.log(title, message);
+		Interface_2.super.log(title, message);
+	}
+}
