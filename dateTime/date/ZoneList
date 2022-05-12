@@ -1,0 +1,20 @@
+
+import java.time.ZoneId;
+import java.util.TreeSet;
+
+public class ZoneList {
+
+	public ZoneList() {
+		
+		TreeSet<String> sortedZones = new TreeSet<>(ZoneId.getAvailableZoneIds());
+
+		System.out.println("Number of zones: " + sortedZones.size());
+//	        System.out.println("");
+
+		System.out.println("\n---[START of LIST]------------\n");
+		for (String zone : sortedZones) {
+			System.out.println(zone);
+		}
+		System.out.println("\n---[END of LIST]------------\n");
+	}
+}
